@@ -1,0 +1,131 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 3.125rem;
+    position: relative;
+}
+
+.logo::before,
+.logo::after {
+    content: "";
+    display: block;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    position: absolute;
+    transform: skewY(-15deg);
+}
+
+.logo::before {
+    background-color: rgb(51, 118, 226, 0.8);
+
+    top: 80px;
+    left: 90px;
+}
+
+.logo::after {
+    background-color: rgba(168, 92, 234, 0.8);
+}
+
+
+.site-caption {
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+}
+
+.site-caption::before {
+    content: "";
+    display: block;
+    width: 0.125rem;
+    height: 150%;
+    background-color: #3376e2;
+
+    position: absolute;
+
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.color-scheme-list {
+
+    display: flex;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    border-radius: 5px;
+    /* overflow: hidden; */
+}
+
+
+
+.color-scheme-list__sample {
+
+    display: block;
+    width: 48px;
+    height: 22px;
+
+    cursor: pointer;
+
+    transition: transform 200ms ease-out;
+}
+
+.color-scheme-list__sample:hover {
+    transform: scale(1.2);
+}
+
+.color-scheme-list__radio:checked+.color-scheme-list__sample {
+    border: 2px solid rgb(0, 0, 0);
+    transform: scale(1.4);
+}
+
+.color-scheme-list__sample[for="3376e2"] {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #3376e2;
+}
+
+.color-scheme-list__sample[for="01133d"] {
+    background-color: #01133d;
+}
+
+.color-scheme-list__sample[for="344264"] {
+    background-color: #344264;
+}
+
+.color-scheme-list__sample[for="67718b"] {
+    background-color: #67718b;
+}
+
+.color-scheme-list__sample[for="99a1b1"] {
+    background-color: #99a1b1;
+}
+
+.color-scheme-list__sample[for="ccd0d8"] {
+    background-color: #ccd0d8;
+}
+
+.color-scheme-list__sample[for="ebecf0"] {
+    background-color: #ebecf0;
+}
+
+.color-scheme-list__sample[for="f5f6f7"] {
+    background-color: #f5f6f7;
+}
+
+.color-scheme-list__sample[for="ffffff"] {
+    background-color: #fff;
+}
+
+.color-scheme-list__sample[for="ff6b62"] {
+
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #ff6b62;
+}
