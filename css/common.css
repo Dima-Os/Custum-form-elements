@@ -1,7 +1,7 @@
 html {
     font-family: 'Ubuntu';
 
-    font-size: 2rem;
+    font-size: 16px;
 
     box-sizing: border-box;
 }
@@ -12,10 +12,20 @@ html {
     box-sizing: inherit;
 }
 
+h1,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+
+    font-size: inherit;
+}
+
 [class*="__container"] {
     max-width: 56.25rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     margin: 0 auto;
 }
 
@@ -33,18 +43,20 @@ html {
     overflow: hidden;
 }
 
-.list {
+.collection {
     list-style: none;
 
     margin: 0;
     padding: 0;
 }
 
-h1,
-h2,
-h3 {
-    padding: 0;
-    margin: 0;
 
-    font-size: inherit;
+
+.section__container {
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 30px;
+    font-weight: 400;
 }

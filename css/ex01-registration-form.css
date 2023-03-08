@@ -1,0 +1,28 @@
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.ex01-registration-form {
+
+    padding: 15.3125rem 0 8.75rem 0;
+    width: 300px;
+
+    background-image:
+        linear-gradient(to bottom,
+            #f4e38b 0%,
+            #ffffff00 30%,
+            #ffffff00 70%,
+            #F4E38B 100%),
+        url(../img/registartion-form-examples/exotic_it_bg/exotic_it.svg);
+    background-repeat: no-repeat;
+    background-position: center center, center 2.9375rem;
+}
+
+.ex01-registration-form__caption {
+
+    margin-bottom: 1.25rem;
+
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 2.125rem;
+}

@@ -7,14 +7,15 @@
     <title>Custum form elements</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link href=" https://fonts.googleapis.com/css?family=Ubuntu:regular,700&display=swap" rel="stylesheet" />
+    <link href=" https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet" />
+
 </head>
 <body>
     <header class="header header__container">
         <a href="#" class="logo "><span class="visually-hidden">Inputs&sselects site</span></a>
         <h1 class="site-caption">Inputs, selects & check-boxes</h1>
         <form action="#" class="color-scheme">
-            <ul class="color-scheme__list list">
+            <ul class="color-scheme__list collection">
                 <li class="color-scheme-list__item">
                     <input class="color-scheme-list__radio visually-hidden" type="radio" name="color-scheme" value="3376e2" id="3376e2">
                     <label for="3376e2" class="color-scheme-list__sample">
@@ -58,13 +59,50 @@
                     <label for="ff6b62" class="color-scheme-list__sample"></label>
                 </li>
             </ul>
-
         </form>
-
-
     </header>
     <main>
-        <!-- inputs samples -->
+        <section class="registration-forms section section__container">
+            <h2 class="section-heading">Registration-form examples</h2>
+            <ul class="registration-forms-list collection">
+                <li class="registration-forms-list__item">
+                    <form class="ex01-registration-form" action="#" name="ex01-registration-form" autocomplete="off">
+                        <div class="ex01-registration-form__caption">Create An Account</div>
+                        <ul class="ex01-user-data-list collection">
+                            <li class="ex01-user-data-list__item">
+                                <label class="ex01-user-data-list__wrp" for="">
+                                    <input class="ex01-user-data-list__user-name ex01-user-data-list__input" type="text" name="user-name" id="" placeholder="Full Name" maxlength="30" minlength="3" required autofocus>
+                                    <button class="ex01-clear-btn ex01-form-btn ex01-user-data-list__clear-btn"><span class="ex01-clear-btn__caption">Clear button</span></button>
+                                </label>
+                            </li>
+                            <li class="ex01-user-data-list__item">
+                                <label class="ex01-user-data-list__wrp" for="">
+                                    <input class="ex01-user-data-list__user-email ex01-user-data-list__input" type="email" name="user-email" id="" placeholder="Email" required>
+                                    <button class="ex01-clear-btn form-btn ex01-user-data-list__clear-btn"><span class="ex01-clear-btn__caption">Clear button</span></button>
+                                </label>
+                            </li>
+                            <li class="ex01-user-data-list__item">
+                                <label class="ex01-user-data-list__wrp" for="">
+                                    <input class="ex01-user-data-list__user-email ex01-user-data-list__input" type="email" name="user-email" id="" placeholder="Password" required>
+                                    <button class="ex01-clear-btn ex01-form-btn user-data-list__clear-btn"><span class="ex01-clear-btn__caption ex01-hide-password">Hide password</span></button>
+                                </label>
+                            </li>
+
+                        </ul>
+                        <button class="ex01-registration-form__submit-btn ex01-submit-btn" type="submit">Sign Up</button>
+                        <div class="alternative-sign-up">Or Sign Up With</div>
+                        <ul class="alternative-sign-up-list collection">
+                            <li class="alternative-sign-up-list__item">
+                                <button class="facebook-sign-up-btn alternative-sign-up-btn"><span class="">Sign up with facebook</span></button>
+                            </li>
+                            <li class="alternative-sign-up-list__item">
+                                <button class="google-sign-up-btn alternative-sign-up-btn" class=""><span>Sign up with google</span></button>
+                            </li>
+                        </ul>
+                    </form>
+                </li>
+            </ul>
+        </section>
     </main>
 </body>
 </html>
