@@ -1,0 +1,153 @@
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.ex01-registration-form {
+
+    padding: 15.3125rem 0 90px 0;
+    width: 300px;
+
+    background-image:
+        linear-gradient(to bottom,
+            #f4e38b 0%,
+            #ffffff00 30%,
+            #ffffff00 90%,
+            #F4E38B 100%),
+        url(../img/registartion-form-examples/exotic_it_bg/exotic_it.svg);
+    background-repeat: no-repeat;
+    background-position: center center, center 2.9375rem;
+
+    text-align: center;
+}
+
+.ex01-registration-form__caption {
+
+    margin-bottom: 1.25rem;
+
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 2.125rem;
+}
+
+.ex01-user-data-list {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.ex01-user-data-list__item:not(:last-child) {
+    margin-bottom: 0.9375rem;
+}
+
+.ex01-user-data-list__wrp {
+    position: relative;
+}
+
+.ex01-user-data-list__input {
+    outline: none;
+    padding: 0.6875rem 10px 0.6875rem 51px;
+
+    line-height: 1.2206rem;
+
+    box-shadow: 0px 0px 0.3125rem 0.0625rem rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 0.75rem;
+
+    background-repeat: no-repeat;
+    background-position: 0.8125rem center;
+
+    transition: box-shadow 200ms linear;
+
+    overflow: hidden;
+}
+
+.ex01-user-data-list__input:focus:invalid {
+    box-shadow: 0px 0px 0.3125rem 0.0625rem rgb(255, 72, 72);
+}
+
+.ex01-user-data-list__input:valid,
+.ex01-user-data-list__input:focus:valid {
+    box-shadow: 0px 0px 0.3125rem 0.0625rem rgb(100, 194, 0);
+}
+
+.ex01-user-data-list__user-name {
+    background-image: url(../img/ico/user-name.svg);
+}
+
+.ex01-user-data-list__user-email {
+    background-image: url(../img/ico/e-mail.svg);
+}
+
+.ex01-user-data-list__user-password {
+    background-image: url(../img/ico/lock.svg);
+}
+
+.ex01-user-data-list__user-password:focus+.ex01-user-data-list__hide-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ex01-user-data-list__clear-btn {
+
+    width: 0.9375rem;
+    height: 1.25rem;
+
+    background-image: url(../img/ico/trash.svg);
+}
+
+.ex01-user-data-list__hide-btn {
+
+
+    width: 1.25rem;
+    height: 0.9375rem;
+
+    background-image: url(../img/ico/eye.svg);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 200ms ease-in-out;
+}
+
+.ex01-registration-form__submit-btn {
+    margin-bottom: 1.3125rem;
+}
+
+.alternative-sign-up {
+    position: relative;
+    margin-bottom: 1rem;
+
+
+    font-size: 22px;
+    line-height: 27px;
+
+}
+
+.alternative-sign-up:before,
+.alternative-sign-up:after {
+    content: "";
+
+    position: absolute;
+    display: block;
+    height: 0.125rem;
+    width: 2.25rem;
+
+    background-color: #000;
+
+    top: 50%;
+}
+
+.alternative-sign-up:before {
+    left: 15px;
+}
+
+.alternative-sign-up::after {
+    right: 15px;
+}
+
+.alternative-sign-up-list {
+    display: flex;
+
+    justify-content: center;
+
+    column-gap: 42px;
+}
