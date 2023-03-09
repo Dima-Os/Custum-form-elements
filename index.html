@@ -71,20 +71,20 @@
                         <ul class="ex01-user-data-list collection">
                             <li class="ex01-user-data-list__item">
                                 <label class="ex01-user-data-list__wrp" for="">
-                                    <input class="ex01-user-data-list__user-name ex01-user-data-list__input" type="text" name="user-name" id="" placeholder="Full Name" maxlength="30" minlength="3" required autofocus>
-                                    <button class="ex01-clear-btn ex01-form-btn ex01-user-data-list__clear-btn"><span class="ex01-clear-btn__caption">Clear button</span></button>
+                                    <input class="ex01-user-data-list__user-name ex01-user-data-list__input" type="text" name="user-name" id="" placeholder="Full Name" minlength="3" required>
+                                    <button class="ex01-clear-btn ex01-form-btn ex01-user-data-list__clear-btn" type="reset"><span class="ex01-clear-btn__caption visually-hidden">Clear button</span></button>
                                 </label>
                             </li>
                             <li class="ex01-user-data-list__item">
                                 <label class="ex01-user-data-list__wrp" for="">
                                     <input class="ex01-user-data-list__user-email ex01-user-data-list__input" type="email" name="user-email" id="" placeholder="Email" required>
-                                    <button class="ex01-clear-btn form-btn ex01-user-data-list__clear-btn"><span class="ex01-clear-btn__caption">Clear button</span></button>
+                                    <button class="ex01-clear-btn ex01-form-btn ex01-user-data-list__clear-btn" type="reset"><span class="ex01-clear-btn__caption visually-hidden">Clear button</span></button>
                                 </label>
                             </li>
                             <li class="ex01-user-data-list__item">
                                 <label class="ex01-user-data-list__wrp" for="">
-                                    <input class="ex01-user-data-list__user-email ex01-user-data-list__input" type="email" name="user-email" id="" placeholder="Password" required>
-                                    <button class="ex01-clear-btn ex01-form-btn user-data-list__clear-btn"><span class="ex01-clear-btn__caption ex01-hide-password">Hide password</span></button>
+                                    <input class="ex01-user-data-list__user-password ex01-user-data-list__input" type="password" name="user-password" id="" placeholder="Password" minlength="5" required>
+                                    <button class="ex01-clear-btn ex01-form-btn  ex01-user-data-list__hide-btn"><span class="ex01-clear-btn__caption visually-hidden">Hide password</span></button>
                                 </label>
                             </li>
 
@@ -93,16 +93,18 @@
                         <div class="alternative-sign-up">Or Sign Up With</div>
                         <ul class="alternative-sign-up-list collection">
                             <li class="alternative-sign-up-list__item">
-                                <button class="facebook-sign-up-btn alternative-sign-up-btn"><span class="">Sign up with facebook</span></button>
+                                <button class="facebook-sign-up-btn alternative-sign-up-btn"><span class="visually-hidden">Sign up with facebook</span></button>
                             </li>
                             <li class="alternative-sign-up-list__item">
-                                <button class="google-sign-up-btn alternative-sign-up-btn" class=""><span>Sign up with google</span></button>
+                                <button class="google-sign-up-btn alternative-sign-up-btn" class=""><span class="visually-hidden">Sign up with google</span></button>
                             </li>
                         </ul>
                     </form>
                 </li>
             </ul>
         </section>
+
+
     </main>
 </body>
 </html>
